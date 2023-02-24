@@ -1,0 +1,28 @@
+{
+  "name": "calorie-calculator",
+  "version": "1.0.0",
+  "description": "Calorie Calculator",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-html": "html-minifier --no-html5 --collapse-whitespace --remove-comments --use-short-doctype --input-dir src --output-dir public --file-ext html",
+    "build": "npm run build-html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenishngl/calorie-calculator.git"
+  },
+  "keywords": [
+    "calorie",
+    "calculator"
+  ],
+  "author": "Jenish Jerome",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenishngl/calorie-calculator/issues"
+  },
+  "homepage": "https://github.com/jenishngl/calorie-calculator#readme",
+  "devDependencies": {
+    "html-minifier": "^4.0.0"
+  }
+}
