@@ -1,0 +1,15 @@
+{
+    "name": "Calorie Calculator",
+    "short_name": "CalorieCalc",
+    "description": "A Calorie Calculator app.",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "theme_color": "#CE93D8",
+    "background_color": "#FFFFFF",
+    "serviceworker": {
+        "src": "./sw.js",
+        "scope": "/",
+        "update_via_cache": "none"
+      }
+}

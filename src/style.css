@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&display=swap');
+
+*, html{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font: 400 16px/24px 'Manrope', sans-serif;
+    text-align: center;
+    
+}
+form{
+    padding: 12px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 12px;
+    text-align: left;
+}
+
+input {
+    height: 34px;
+    width: 264px;
+}
+
+select, option{
+    height: 34px;
+    width: 264px;
+}

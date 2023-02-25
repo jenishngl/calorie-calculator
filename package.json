@@ -5,8 +5,13 @@
   "main": "public/index.html",
   "scripts": {
     "init": "npm ci",
-    "build-html": "html-minifier --no-html5 --collapse-whitespace --remove-comments --use-short-doctype --input-dir src --output-dir public --file-ext html",
-    "build": "npm run build-html"
+    "clean": "rimraf src/workbox*.js && rimraf src/*.map && rimraf src/images/*.* && rimraf public/*",
+    "build-html": "html-minifier --collapse-whitespace --remove-comments --use-short-doctype --input-dir src --output-dir public --file-ext html",
+    "build-js": "minify src/script.js --mangle --simplify -d public",
+    "build-css": "postcss src/*.css -d public",
+    "sw-build": "workbox generateSW",
+    "copy-static": "copyfiles -u 1 ./src/sw.js ./src/workbox*.js ./src/*.map ./src/images/*.* ./src/manifest.webmanifest ./public",
+    "build": "npm run clean && npm run build-html && npm run build-js && npm run build-css && npm run sw-build && npm run copy-static"
   },
   "repository": {
     "type": "git",
@@ -23,6 +28,14 @@
   },
   "homepage": "https://github.com/jenishngl/calorie-calculator#readme",
   "devDependencies": {
-    "html-minifier": "^4.0.0"
+    "babel-minify": "^0.5.2",
+    "copyfiles": "^2.4.1",
+    "cssnano": "^5.1.15",
+    "html-minifier": "^4.0.0",
+    "minify": "^9.2.0",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "rimraf": "^4.1.2",
+    "workbox-cli": "^6.5.4"
   }
 }
