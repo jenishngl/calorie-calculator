@@ -4,7 +4,7 @@
   "description": "Calorie Calculator",
   "main": "public/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "npm ci",
     "build-html": "html-minifier --no-html5 --collapse-whitespace --remove-comments --use-short-doctype --input-dir src --output-dir public --file-ext html",
     "build": "npm run build-html"
   },
