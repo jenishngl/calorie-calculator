@@ -2,7 +2,6 @@
 
 *, html{
     box-sizing: border-box;
-    font: 200 16px/24px 'Manrope', sans-serif;
 }
 
 body{
@@ -11,8 +10,8 @@ body{
     padding: 0;
     font: 400 16px/24px 'Manrope', sans-serif;
     text-align: center;
-    
 }
+
 form{
     padding: 12px;
     display: grid;
@@ -25,15 +24,18 @@ input {
     height: 34px;
     width: 264px;
     text-align: right;
+    font: 200 16px/24px 'Manrope', sans-serif;
 }
 
 select, option{
     height: 34px;
     width: 264px;
     text-align: right;
+    font: 200 16px/24px 'Manrope', sans-serif;
 }
 
 button{
     height: 34px;
     text-align: center;
+    font: 200 16px/24px 'Manrope', sans-serif;
 }
