@@ -15,7 +15,8 @@ form.addEventListener("submit", (e) =>{
         bmr = 10 * parseFloat(weight.value) + 6.25 * parseFloat(height.value) - 5 * parseFloat(age.value) + 5
         calories.value = parseFloat(bmr) * parseFloat(activity.value)
     }else if (gender.value === "F"){
-        bmr = (10 * 83) + (6.25 * 172) - 5 * 28 + 5
+        bmr = 10 * parseFloat(weight.value) + 6.25 * parseFloat(height.value) - 5 * parseFloat(age.value) - 161
+        calories.value = parseFloat(bmr) * parseFloat(activity.value)
     }else{}
 })
 
