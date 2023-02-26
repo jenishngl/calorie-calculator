@@ -20,10 +20,10 @@ form.addEventListener("submit", (e) =>{
     }else{}
 })
 
-// if ('serviceWorker' in navigator){
-//     window.addEventListener('load', () => {
-//         navigator.serviceWorker.register('sw.js', {updateViaCache: 'none'}).then(registration => {
-//             registration.update();
-//         })
-//     });
-// }
+if ('serviceWorker' in navigator){
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js', {updateViaCache: 'none'}).then(registration => {
+            registration.update();
+        })
+    });
+}

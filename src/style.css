@@ -24,13 +24,16 @@ form{
 input {
     height: 34px;
     width: 264px;
+    text-align: right;
 }
 
 select, option{
     height: 34px;
     width: 264px;
+    text-align: right;
 }
 
 button{
     height: 34px;
+    text-align: center;
 }
