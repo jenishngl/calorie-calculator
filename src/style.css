@@ -2,6 +2,7 @@
 
 *, html{
     box-sizing: border-box;
+    font: 200 16px/24px 'Manrope', sans-serif;
 }
 
 body{
@@ -28,4 +29,8 @@ input {
 select, option{
     height: 34px;
     width: 264px;
+}
+
+button{
+    height: 34px;
 }
