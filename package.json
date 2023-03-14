@@ -5,7 +5,7 @@
   "main": "public/index.html",
   "scripts": {
     "init": "npm ci",
-    "clean": "rimraf src/workbox*.js && rimraf src/*.map && rimraf src/images/*.* && rimraf public/*",
+    "clean": "rimraf src/workbox*.js && rimraf src/*.map && rimraf public/images/*.* && rimraf public/*",
     "build-html": "html-minifier --collapse-whitespace --remove-comments --use-short-doctype --input-dir src --output-dir public --file-ext html",
     "build-js": "minify src/script.js --mangle --simplify -d public",
     "build-css": "postcss src/*.css -d public",

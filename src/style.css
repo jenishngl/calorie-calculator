@@ -14,10 +14,22 @@ body{
 
 form{
     padding: 12px;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+#form-inputs{
     display: grid;
     grid-template-columns: auto auto;
     gap: 12px;
-    text-align: left;
+}
+
+#form-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
 }
 
 input {
@@ -38,4 +50,53 @@ button{
     height: 34px;
     text-align: center;
     font: 200 16px/24px 'Manrope', sans-serif;
+    min-width: 250px;
+}
+
+.results{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 12px;
+    margin: 12px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.results-card{
+    background-color: cornsilk;
+    height: 128px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+    background-position: center;
+    padding: 12px;
+}
+
+.protein{
+    background-image: url(./images/protein.png);
+}
+
+.carbs{
+    background-image: url(./images/carbs.png);
+}
+
+.fat{
+    background-image: url(./images/fat.png);
+}
+
+.invisible{
+    display: none;
+}
+
+.results{
+    text-align: center;
+    font: 200 16px/24px 'Manrope', sans-serif;
+}
+
+.calories-wrapper{
+    padding: 12px;
+}
+
+#calories{
+    font: 600 18px/24px 'Manrope', sans-serif;
 }
