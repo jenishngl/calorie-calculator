@@ -85,7 +85,7 @@ button{
 }
 
 .invisible{
-    display: none;
+    visibility: hidden;
 }
 
 .results{

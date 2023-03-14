@@ -5,12 +5,12 @@
   "main": "public/index.html",
   "scripts": {
     "init": "npm ci",
-    "clean": "rimraf src/workbox*.js && rimraf src/*.map && rimraf public/images/*.* && rimraf public/*",
+    "clean": "rimraf src/workbox*.js && rimraf src/*.map && rimraf public/images/*.* && rimraf public/icons/*.* && rimraf public/*",
     "build-html": "html-minifier --collapse-whitespace --remove-comments --use-short-doctype --input-dir src --output-dir public --file-ext html",
     "build-js": "minify src/script.js --mangle --simplify -d public",
     "build-css": "postcss src/*.css -d public",
     "sw-build": "workbox generateSW",
-    "copy-static": "copyfiles -u 1 ./src/sw.js ./src/workbox*.js ./src/*.map ./src/images/*.* ./src/manifest.webmanifest ./public",
+    "copy-static": "copyfiles -u 1 ./src/sw.js ./src/workbox*.js ./src/*.map ./src/images/*.* ./src/icons/*.* ./src/manifest.webmanifest ./public",
     "build": "npm run clean && npm run build-html && npm run build-js && npm run build-css && npm run sw-build && npm run copy-static"
   },
   "repository": {
