@@ -25,7 +25,7 @@ form.addEventListener("submit", (e) =>{
     protein.textContent = ((calorie_val * 24.5) / (100 * 4)).toFixed(2) + " g"
     carbs.textContent = ((calorie_val * 52) / (100 * 4)).toFixed(2) + " g"
     fat.textContent = ((calorie_val * 23.5) / (100 * 9)).toFixed(2) + " g"
-    results.classList.toggle("invisible")
+    results.classList.remove("invisible")
 })
 
 if ('serviceWorker' in navigator){
