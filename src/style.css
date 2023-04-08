@@ -88,6 +88,10 @@ button{
     visibility: hidden;
 }
 
+.invisible > .results, .invisible > .calories-wrapper{
+    display: none;
+}
+
 .results{
     text-align: center;
     font: 200 16px/24px 'Manrope', sans-serif;
@@ -99,4 +103,19 @@ button{
 
 #calories{
     font: 600 18px/24px 'Manrope', sans-serif;
+}
+
+.how-tos{
+    text-align: justify;
+    margin: auto;
+    max-width: 950px;
+    padding: 0 16px;
+}
+
+pre{
+    overflow: auto;
+}
+
+footer{
+    padding: 16px 0;
 }

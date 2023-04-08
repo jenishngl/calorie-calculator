@@ -14,7 +14,7 @@ const results = document.getElementById("results")
 
 form.addEventListener("submit", (e) =>{
     e.preventDefault();
-    console.log(gender.value, height.value, weight.value, age.value, activity.value, lost_weight.value)
+    // console.log(gender.value, height.value, weight.value, age.value, activity.value, lost_weight.value)
     if (gender.value === "M"){
         bmr = 10 * parseFloat(weight.value) + 6.25 * parseFloat(height.value) - 5 * parseFloat(age.value) + 5
     }else if (gender.value === "F"){
@@ -28,10 +28,10 @@ form.addEventListener("submit", (e) =>{
     results.classList.remove("invisible")
 })
 
-if ('serviceWorker' in navigator){
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js', {updateViaCache: 'none'}).then(registration => {
-            registration.update();
-        })
-    });
-}
+// if ('serviceWorker' in navigator){
+//     window.addEventListener('load', () => {
+//         navigator.serviceWorker.register('sw.js', {updateViaCache: 'none'}).then(registration => {
+//             registration.update();
+//         })
+//     });
+// }
